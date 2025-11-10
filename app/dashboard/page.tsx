@@ -23,14 +23,17 @@ export default function DashboardPage() {
 
   const fetchBlogs = async () => {
     const data = await getBlogs()
+
+    // Map data dari Blog ke BlogCardAdminProps
     const blogsWithStringDate: BlogCardAdminProps[] = data.map((blog: Blog) => ({
       id: blog.id,
       title: blog.title,
       excerpt: blog.excerpt,
       content: blog.content,
       image: blog.image,
-      date: blog.date.toISOString().split('T')[0],
+      date: blog.date.toISOString().split('T')[0], // ubah Date ke string 'YYYY-MM-DD'
     }))
+
     setBlogs(blogsWithStringDate)
   }
 
