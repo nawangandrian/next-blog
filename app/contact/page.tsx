@@ -12,7 +12,7 @@ export default function ContactPage() {
                 Hubungi Kami
               </h2>
 
-              <p className="hidden sm:block mt-4 text-indigo-100 leading-relaxed">
+              <p className="mt-4 text-indigo-100 leading-relaxed">
                 Kami senang mendengar dari Anda!  
                 Apakah Anda memiliki pertanyaan, saran, atau ingin berkolaborasi?  
                 Tim <span className="font-semibold text-white">News NawDev</span> siap membantu Anda.

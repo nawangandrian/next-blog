@@ -43,18 +43,18 @@ export default function BlogCard({ id, title, excerpt, image, date }: BlogCardPr
         {/* Konten */}
         <div className="flex flex-1 flex-col justify-between border-t sm:border-t-0 sm:border-l border-gray-900/10 p-4 sm:p-6">
           <Link href={`/blog/${id}`}>
-            <h3 className="font-bold text-gray-900 uppercase hover:text-indigo-600 transition">
+            <h3 className="font-bold text-gray-900 uppercase text-2xl md:text-2xl hover:text-indigo-600 transition">
               {title}
             </h3>
           </Link>
 
-          <p className="mt-2 line-clamp-3 text-sm text-gray-700">
+          <p className="mt-2 line-clamp-3 text-base md:text-lg text-gray-700 text-justify">
             {excerpt}
           </p>
 
           <div className="mt-4 sm:mt-2 sm:flex sm:items-end sm:justify-end">
             <Link
-              href={`/blog`}
+              href={`/blog/${id}`}
               className="block bg-indigo-600 px-5 py-3 text-center text-xs font-bold text-white uppercase transition hover:bg-indigo-800"
             >
               Read Blog

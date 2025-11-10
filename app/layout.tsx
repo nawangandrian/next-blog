@@ -8,6 +8,9 @@ import { ReactNode } from 'react';
 export const metadata: Metadata = {
   title: 'News NawDev',
   description: 'Berita dan Artikel Teknologi Terkini oleh NawDev',
+  icons: {
+    icon: '/vercel.svg',  // <-- path favicon
+  },
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {

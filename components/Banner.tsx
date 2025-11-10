@@ -30,7 +30,7 @@ export default function Banner() {
 
           <div className="mt-6 flex flex-wrap gap-4">
             <Link
-              href="/blog"
+              href="/"
               className="inline-block rounded-md bg-indigo-600 px-6 py-3 text-white font-medium shadow-md hover:bg-indigo-700 transition-colors"
             >
               Lihat Artikel Terbaru

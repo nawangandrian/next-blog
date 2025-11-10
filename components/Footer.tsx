@@ -3,7 +3,13 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-blue-700 text-white mt-16">
+    <footer className="bg-blue-700 text-white mt-16 pb-18 md:pb-0"> 
+      {/* 
+        🧩 Tambahan penting:
+        pb-24 = padding-bottom ekstra untuk mobile (supaya tidak tertutup bottom nav)
+        md:pb-0 = hilangkan padding ekstra di desktop
+      */}
+
       {/* Bagian tengah: info grid */}
       <div className="max-w-6xl mx-auto px-6 py-8 grid grid-cols-1 lg:grid-cols-3 gap-6 lg:text-left">
         
